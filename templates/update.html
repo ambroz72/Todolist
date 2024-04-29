@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <form method="POST" class="p-4 shadow-lg rounded-lg bg-light">
+                {% csrf_token %}
+                <h2 class="mb-4 text-center">Add Task</h2>
+                {{ f.as_p }}
+                <button type="submit" class="btn btn-primary btn-block mt-3">Confirm</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">{{ task.name }}</h2>
+                    <p class="font-weight-bold">Priority: {{ task.priority }} <br>Date: {{ task.date }}</p>
+                    <div class="text-center">
+                        <a href="{% url 'delete' task.id %}" class="btn btn-danger mr-2">Delete</a>
+                        <a href="{% url 'update' task.id %}" class="btn btn-success">Update</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

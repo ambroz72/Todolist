@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-4"><br><br>
+                    <div class="card">
+                        <div class="card-body">
+                            <form method='POST'>
+                                {% csrf_token %}
+                            <br><br>
+                                {{form.as_p}}
+                                <button type='submit' class="btn btn-success">Confirm</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        {%endblock%}

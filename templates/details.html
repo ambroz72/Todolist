@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+<br> <h1>TODO LIST</h1>
+{% comment %} {% for i in task1 %} {% endcomment %}
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card=title">{{ task.name }}</h2>
+                    <p> priority={{ task.priority }} <br><br> date={{ task.date }} </p>
+                    <a href="{% url 'delete' task.id %}" class="btn btn-danger">delete</a>
+                    <a href="{% url 'update' task.id %}" class="btn btn-success">update</a>
+                </div>
+            </div>
+        </div>
+{% comment %} {% endfor %} {% endcomment %}
+
+ {% endblock %} 
+ 
+</html>
