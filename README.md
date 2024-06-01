@@ -1,6 +1,8 @@
 # Django Simple Todo list project with Djnago framework 
 This is a simple  Todo list project website built with Django,Python,HTML,CSS,Bootstrap  
 
+ ![screenshot](screenshot/todo.png)
+
 Todo List Application
 This is a simple Todo List application built using Django, a high-level Python web framework.
 It allows users to create, view, update, and delete tasks. The project utilizes Class-Based Views (CBVs)
