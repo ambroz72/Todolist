@@ -69,13 +69,6 @@ Provide your contact details or a way for users to reach out to you for question
 # Additional Notes
 Include any additional information you think might be relevant to users or contributors.
 
-# Technologies Used
-
-- Django
-- HTML/CSS
-- JavaScript
-- Django templates
-
 # Installation
 
 # 1. Clone the repository:
