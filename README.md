@@ -17,9 +17,9 @@ User Interface: The application provides a clean and intuitive user interface fo
 
 Django
 HTML/CSS
-JavaScript (if applicable)
 Django templates
-Installation
+
+# Installation
 Provide step-by-step instructions on how to set up your project locally. Include prerequisites and commands to install dependencies.
 
 # Clone the repository:
