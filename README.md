@@ -19,34 +19,6 @@ Django
 HTML/CSS
 Django templates
 
-# Installation
-Provide step-by-step instructions on how to set up your project locally. Include prerequisites and commands to install dependencies.
-
-# Clone the repository:
-
-git clone https://github.com/yourusername/your-repository.git
-cd your-repository
-
-# Install dependencies:
-
-pip install -r requirements.txt
-
-# Set up the database:
-
-python manage.py migrate
-
-# Create a superuser (if applicable):
-
-python manage.py createsuperuser
-
-# Run the development server:
-
-python manage.py runserver
-
-# Access the application:
-
-Open your web browser and go to http://localhost:8000/ to see the application.
-
 Usage
 Adding a Task: Click on the "Add Task" button and fill in the task details, including name, priority, and due date.
 Viewing Task Details: Click on a task to view its details, including name, priority, and due date.
